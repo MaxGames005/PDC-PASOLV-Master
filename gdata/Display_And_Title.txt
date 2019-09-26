@@ -1,0 +1,2 @@
+Display *500d, 500d*
+Title *PASOLV*

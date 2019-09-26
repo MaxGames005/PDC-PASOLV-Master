@@ -1,0 +1,7 @@
+QT5: True
+MATPLOTLIB: True
+TOOLS: True
+MAYAVI: False
+OPENGL: True
+MATH: True
+KIVY: False

@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d1c0da13-2362-4c76-917c-8538052c47ac" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="PDC PASOLV Master" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/extensoes/Dependencies.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="43">
+              <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/extensoes/glib.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gscripts/Fisica/GFisica.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gscripts/Gmath/gmath.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="72">
+              <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/PDC_PASOLV_App.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2376">
+              <caret line="100" column="22" selection-start-line="100" selection-start-column="22" selection-end-line="100" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#36#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>&quot;</find>
+      <find>:</find>
+      <find>Geometric</find>
+      <find>FormulaIn</find>
+      <find>Open</find>
+      <find>Scripts</find>
+      <find>Extensoes</find>
+      <find>Erro</find>
+      <find>from Extensoes.Dependencies import *</find>
+      <find>__clsvars</find>
+      <find>__list</find>
+      <find>Lst</find>
+      <find>scripts</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>=</replace>
+      <replace>scripts</replace>
+      <replace>extensoes</replace>
+      <replace>_erro</replace>
+      <replace>from extensoes.dependencies import *</replace>
+      <replace>__cls_vars</replace>
+      <replace>__dict</replace>
+      <replace>Dtc</replace>
+      <replace>gscripts</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/pasolv.kv" />
+        <option value="$PROJECT_DIR$/References/Reference.py" />
+        <option value="$PROJECT_DIR$/GetEnvPath.py" />
+        <option value="$PROJECT_DIR$/Scripts/Funcao/MathLib.py" />
+        <option value="$PROJECT_DIR$/Scripts/Funcao/MatBibli.py" />
+        <option value="$PROJECT_DIR$/Scripts/Funcao/Funcoes.py" />
+        <option value="$PROJECT_DIR$/Interfaces/Interface.py" />
+        <option value="$PROJECT_DIR$/Extensoes/Dependencies.py" />
+        <option value="$PROJECT_DIR$/Extensoes/glib.py" />
+        <option value="$PROJECT_DIR$/config.py" />
+        <option value="$PROJECT_DIR$/qt_interface/mainInterface/ITMG.py" />
+        <option value="$PROJECT_DIR$/InterfaceManager.py" />
+        <option value="$PROJECT_DIR$/scripts/Vetor/Operacoes.py" />
+        <option value="$PROJECT_DIR$/bin/App/App.py" />
+        <option value="$PROJECT_DIR$/bin/AppAssist/Assistente.py" />
+        <option value="$PROJECT_DIR$/bin/AppPages/Pages.py" />
+        <option value="$PROJECT_DIR$/bin/main.py" />
+        <option value="$PROJECT_DIR$/scripts/Vetor/Vetores.py" />
+        <option value="$PROJECT_DIR$/recursos/Resourses.py" />
+        <option value="$PROJECT_DIR$/scripts/Vetor/Conteudo.py" />
+        <option value="$PROJECT_DIR$/PDC_PASOLV_App.py" />
+        <option value="$PROJECT_DIR$/scripts/Fisica/GFisica.py" />
+        <option value="$PROJECT_DIR$/scripts/Fisica/Mecanica.py" />
+        <option value="$PROJECT_DIR$/scripts/Fisica/MecanicaDosSolidos.py" />
+        <option value="$PROJECT_DIR$/scripts/Gmath/gmath_extensao.py" />
+        <option value="$PROJECT_DIR$/scripts/MetodoNumerico/Metodos.py" />
+        <option value="$PROJECT_DIR$/screen/Screens.py" />
+        <option value="$PROJECT_DIR$/controle/Root.py" />
+        <option value="$PROJECT_DIR$/controle/CLib.py" />
+        <option value="$PROJECT_DIR$/interfaces/Interface.py" />
+        <option value="$PROJECT_DIR$/scripts/Gmath/gmath.py" />
+        <option value="$PROJECT_DIR$/scripts/Gmath/gmath_funcao.py" />
+        <option value="$PROJECT_DIR$/gscripts/Fisica/GFisica.py" />
+        <option value="$PROJECT_DIR$/gscripts/Gmath/gmath.py" />
+        <option value="$PROJECT_DIR$/extensoes/glib.py" />
+        <option value="$PROJECT_DIR$/extensoes/Dependencies.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="276" />
+    <option name="y" value="29" />
+    <option name="width" value="820" />
+    <option name="height" value="620" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="PDC PASOLV Master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PDC PASOLV Master" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PDC PASOLV Master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PDC PASOLV Master" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PDC PASOLV Master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PDC PASOLV Master" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+              <item name="App" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PDC PASOLV Master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PDC PASOLV Master" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+              <item name="AppAssist" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PDC PASOLV Master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PDC PASOLV Master" type="462c0819:PsiDirectoryNode" />
+              <item name="bin" type="462c0819:PsiDirectoryNode" />
+              <item name="AppPages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PDC PASOLV Master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PDC PASOLV Master" type="462c0819:PsiDirectoryNode" />
+              <item name="controle" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PDC PASOLV Master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PDC PASOLV Master" type="462c0819:PsiDirectoryNode" />
+              <item name="extensoes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PDC PASOLV Master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PDC PASOLV Master" type="462c0819:PsiDirectoryNode" />
+              <item name="interfaces" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PDC PASOLV Master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PDC PASOLV Master" type="462c0819:PsiDirectoryNode" />
+              <item name="ITMG" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PDC PASOLV Master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PDC PASOLV Master" type="462c0819:PsiDirectoryNode" />
+              <item name="ITMG" type="462c0819:PsiDirectoryNode" />
+              <item name="mainInterface" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PDC PASOLV Master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PDC PASOLV Master" type="462c0819:PsiDirectoryNode" />
+              <item name="qt_interface" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PDC PASOLV Master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PDC PASOLV Master" type="462c0819:PsiDirectoryNode" />
+              <item name="qt_interface" type="462c0819:PsiDirectoryNode" />
+              <item name="mainInterface" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PDC PASOLV Master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PDC PASOLV Master" type="462c0819:PsiDirectoryNode" />
+              <item name="recursos" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PDC PASOLV Master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PDC PASOLV Master" type="462c0819:PsiDirectoryNode" />
+              <item name="references" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PDC PASOLV Master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PDC PASOLV Master" type="462c0819:PsiDirectoryNode" />
+              <item name="screen" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PDC PASOLV Master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PDC PASOLV Master" type="462c0819:PsiDirectoryNode" />
+              <item name="setup" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PDC PASOLV Master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Recursos" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.editor" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\GUILHERME\Desktop\PDC PASOLV Master\Recursos" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.PDC_PASOLV_App">
+    <configuration name="Dependencies" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PDC PASOLV Master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/extensoes" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/extensoes/Dependencies.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="PDC_PASOLV_App" type="PythonConfigurationType" factoryName="Python">
+      <module name="PDC PASOLV Master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PDC_PASOLV_App.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="glib" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PDC PASOLV Master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/extensoes" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/extensoes/glib.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.glib" />
+        <item itemvalue="Python.Dependencies" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="StructureViewFactory">
+    <option name="AUTOSCROLL_FROM_SOURCE" value="true" />
+    <option name="ACTIVE_ACTIONS" value=",SHOW_INHERITED" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\GUILHERME\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d1c0da13-2362-4c76-917c-8538052c47ac" name="Default Changelist" comment="" />
+      <created>1568261851426</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1568261851426</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.48214287" visible="true" weight="0.15695067" />
+      <window_info id="Structure" order="1" sideWeight="0.51785713" side_tool="true" visible="true" weight="0.15695067" />
+      <window_info id="Favorites" order="2" sideWeight="0.502551" side_tool="true" weight="0.15969582" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32876712" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32876712" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" visible="true" weight="0.32876712" />
+      <window_info anchor="bottom" id="Python Console" order="10" weight="0.32876712" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Key Promoter X" order="3" show_stripe_button="false" weight="0.32927758" />
+    </layout>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/references/Reference.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qt_interface/mainInterface/untitled.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/new.py" />
+    <entry file="file://$PROJECT_DIR$/scripts/Controladoria/Controller.py" />
+    <entry file="file://$PROJECT_DIR$/scripts/Classes/Classes.py" />
+    <entry file="file://$PROJECT_DIR$/scripts/Algebra/TransformBibli.py" />
+    <entry file="file://$PROJECT_DIR$/scripts/Algebra/SistemasLineares.py" />
+    <entry file="file://$PROJECT_DIR$/scripts/Algebra/EscalBibli.py" />
+    <entry file="file://$PROJECT_DIR$/qt_interface/mainInterface/PDC Pasolv Master.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/qt_interface/mainInterface/ITMG.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="30" selection-start-line="11" selection-start-column="30" selection-end-line="11" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ITMG/mainInterface/ITMG.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#16#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controle/DirController.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controle/Constantes.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extensoes/IntermedLib.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/Data.py" />
+    <entry file="file://$PROJECT_DIR$/InterfaceManager.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GetEnvPath.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup/setup.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/Vetor/Checagem.py" />
+    <entry file="file://$PROJECT_DIR$/scripts/Lista/Listas.py" />
+    <entry file="file://$PROJECT_DIR$/bin/App/App.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/AppAssist/Assistente.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/AppPages/Pages.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/Strings/String.py" />
+    <entry file="file://$PROJECT_DIR$/bin/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/Vetor/Operacoes.py" />
+    <entry file="file://$PROJECT_DIR$/scripts/Vetor/Vetores.py" />
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1056">
+          <caret line="44" selection-start-line="44" selection-end-line="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/recursos/Resourses.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="28" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+          <folding>
+            <element signature="e#12#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/Fisica/GFisica.py" />
+    <entry file="file://$USER_HOME$/.PyCharmCE2019.1/system/python_stubs/-1393521374/builtins.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="834" column="4" selection-start-line="834" selection-start-column="4" selection-end-line="834" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/Fisica/MecanicaDosSolidos.py" />
+    <entry file="file://$PROJECT_DIR$/scripts/MetodoNumerico/Metodos.py" />
+    <entry file="file://$PROJECT_DIR$/screen/Screens.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="6" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controle/Root.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controle/CLib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="16" selection-start-line="1" selection-start-column="16" selection-end-line="1" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/Fisica/Mecanica.py" />
+    <entry file="file://$PROJECT_DIR$/scripts/Vetor/Conteudo.py" />
+    <entry file="file://$PROJECT_DIR$/scripts/Vetor/Conversoes.py" />
+    <entry file="file://$PROJECT_DIR$/interfaces/Interface.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="24" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
+          <folding>
+            <element signature="e#52#88#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/pyodesys/util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/pyodesys/results.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/Gmath/gmath.py" />
+    <entry file="file://$PROJECT_DIR$/scripts/Algebra/ALLgebra.py" />
+    <entry file="file://$PROJECT_DIR$/scripts/Gmath/gmath_funcao.py" />
+    <entry file="file://$PROJECT_DIR$/scripts/Gmath/gmath_extensao.py" />
+    <entry file="file://$PROJECT_DIR$/extensoes/Dependencies.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="43">
+          <caret line="15" column="19" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extensoes/glib.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gscripts/Fisica/GFisica.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gscripts/Gmath/gmath.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PDC_PASOLV_App.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2376">
+          <caret line="100" column="22" selection-start-line="100" selection-start-column="22" selection-end-line="100" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

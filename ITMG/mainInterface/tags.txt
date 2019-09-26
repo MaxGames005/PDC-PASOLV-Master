@@ -1,0 +1,3 @@
+PasolvIcon.png : GPC.Recursos+"Icon.png"
+Formulaicon.png : GPC.Recursos+"formulaicon.png"
+TabsIcon : GPC.Recursos+"geometricicon.png"
