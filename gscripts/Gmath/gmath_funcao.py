@@ -1,4 +1,5 @@
 from extensoes.Dependencies import *
+from gscripts.Classes.Classes import *
 
 """=====Type Keys"""
 F = 'function'
@@ -10,7 +11,6 @@ DBG = 'debug'
 Dtc = 'dict'
 Var = 'var'
 Cb = 'callback'
-
 
 class Equator:
     """Equator gera objetos atraves de string em formato de equação
@@ -119,7 +119,20 @@ class Equator:
         self.__dict_var = self.__cls_vars[Dtc][Var]
         self.__dict_callback = self.__cls_vars[Dtc][Cb]
 
+    def add(self, string_function):
+        if IsEquatorFunction(string_function):
+            self.__cls_vars[F]['name'], self.__cls_vars[F][arg],\
+                self.__cls_vars[F][sep], self.__cls_vars[F][body] = EquatorFunction(string_function)
+        else:
+            return
 
-print(Equator().__doc__)
+    def check_f_completion(self):
+        if self.__cls_vars[F]['name'] and self.__cls_vars[F][arg] \
+                and self.__cls_vars[F][sep] and self.__cls_vars[F][body]:
+            return True
+        else:
+            return False
+
+# print(Equator().__doc__)
 
 
