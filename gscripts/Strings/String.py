@@ -24,8 +24,6 @@ class UntilFind:
         return self.__string[:self.__string.find(self.__char)+self.__stop]
 
 
-
-
 class String:
     def __init__(self, string):
         self.string = string

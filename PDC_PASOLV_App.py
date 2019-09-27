@@ -98,8 +98,8 @@ Initializer
 
 
 if __name__ == "__main__":
-    QtRun().PasolvMain
-    #RunApp(PasolvApp, True)
+    pass
+    #QtRun().PasolvMain
 
 
 """

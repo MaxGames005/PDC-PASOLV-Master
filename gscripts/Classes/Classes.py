@@ -95,6 +95,35 @@ class IsEquatorFunction:
             return False, None
 
 
+class IsEquatorArg:
+    """IsEquatorArg uma ferramenta de controle verifica se uma string e uma string no formato EquatorArg
+    |USO|: IsEquatorArg('x,y,z', 'F(x,y,z)') ; |SAIDA|: True --> F(x,y,z)
+    |USO|: IsEquatorArg('x,y,z', 'F(x,y)')  ; |SAIDA|: False --> F(x,y)
+    """
+    def __init__(self, arg_body, function_arg_length):
+        self.__conclusion = None
+        try:
+            if isinstance(eval(arg_body), int) or isinstance(eval(arg_body), float):
+                if function_arg_length == 1:
+                    self.__conclusion = True
+                else:
+                    self.__conclusion = False
+            elif isinstance(eval(arg_body), list) or isinstance(eval(arg_body), tuple):
+                if function_arg_length == len(eval(arg_body)):
+                    self.__conclusion = True
+                else:
+                    self.__conclusion = False
+            else:
+                self.__conclusion = False
+        except:
+            self.__conclusion = False
+
+    def __new__(cls, arg_body, function_arg_length):
+        inst = super(IsEquatorArg, cls).__new__(cls)
+        inst.__init__(arg_body, function_arg_length)
+        return inst.__conclusion
+
+
 class EquatorFunction:
     """EquatorFunction uma ferramenta de conversão de string no formato EquatorFunction para lista
     |USO|: EquatorFunction('f(x,y) = ln(x) - exp(x**2)/x**4') ;   |SAIDA|: ['f','(x,y)','=','ln(x)-exp(x**2)/x**4']
@@ -142,6 +171,31 @@ class EquatorFunction:
             return self.__split_eqf
         else:
             return None
+
+
+class ClearNones:
+    """Como o nome diz mas somente retorna listas ou dicionarios"""
+    def __init__(self, arg):
+        if isinstance(arg, tuple) or isinstance(arg, list):
+            self.__bufer = []
+            for i in arg:
+                if i:
+                    self.__bufer.append(i)
+        elif isinstance(arg, dict):
+            self.__bufer = {}
+            for key in arg:
+                if arg[key]:
+                    self.__bufer[key] = arg[key]
+        else:
+            self.__bufer = None
+
+    def __new__(cls, arg):
+        inst = super(ClearNones, cls).__new__(cls)
+        inst.__init__(arg)
+        return inst.__bufer
+
+
+
 
 
 
