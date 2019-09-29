@@ -30,12 +30,21 @@
    <iconset theme="PasolvIcon.png">
     <normaloff>.</normaloff>.</iconset>
   </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(17, 26, 25);</string>
+  </property>
   <widget class="QWidget" name="centralwidget">
    <property name="minimumSize">
     <size>
      <width>819</width>
      <height>537</height>
     </size>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
    </property>
    <layout class="QGridLayout" name="gridLayout_4">
     <item row="0" column="0">
@@ -58,8 +67,11 @@
       <property name="autoFillBackground">
        <bool>false</bool>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgb(81, 81, 81);</string>
+      </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="P_tab2">
        <property name="sizePolicy">
@@ -67,6 +79,9 @@
          <horstretch>0</horstretch>
          <verstretch>0</verstretch>
         </sizepolicy>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background: url(:/background.jpg)</string>
        </property>
        <attribute name="icon">
         <iconset theme="Formulaicon.png">
@@ -76,6 +91,53 @@
         <string>Formula</string>
        </attribute>
        <layout class="QGridLayout" name="gridLayout_3">
+        <item row="5" column="0">
+         <widget class="QLabel" name="VariavelLabel">
+          <property name="font">
+           <font>
+            <pointsize>10</pointsize>
+            <weight>75</weight>
+            <italic>true</italic>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="text">
+           <string>Varivel:</string>
+          </property>
+         </widget>
+        </item>
+        <item row="11" column="0">
+         <spacer name="horizontalSpacer">
+          <property name="orientation">
+           <enum>Qt::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item row="4" column="0">
+         <widget class="QPushButton" name="AddFormula">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(175, 175, 175);</string>
+          </property>
+          <property name="text">
+           <string>Add</string>
+          </property>
+         </widget>
+        </item>
         <item row="2" column="0">
          <widget class="QLabel" name="FormulaLabel">
           <property name="sizePolicy">
@@ -97,66 +159,29 @@
           </property>
          </widget>
         </item>
-        <item row="3" column="0">
-         <widget class="QLineEdit" name="FormulaInput">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
+        <item row="10" column="0">
+         <widget class="QLineEdit" name="ResultOutPut">
           <property name="font">
            <font>
-            <family>Gill Sans Ultra Bold</family>
+            <weight>75</weight>
+            <bold>true</bold>
            </font>
           </property>
-          <property name="autoFillBackground">
-           <bool>true</bool>
-          </property>
-          <property name="text">
-           <string>F(x,y) = ax^n + by^k</string>
-          </property>
-          <property name="dragEnabled">
-           <bool>true</bool>
-          </property>
-          <property name="clearButtonEnabled">
+          <property name="tabletTracking">
            <bool>false</bool>
           </property>
-         </widget>
-        </item>
-        <item row="4" column="0">
-         <widget class="QPushButton" name="AddFormula">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(175, 175, 175);</string>
           </property>
           <property name="text">
-           <string>Add</string>
+           <string/>
+          </property>
+          <property name="placeholderText">
+           <string>Resultado</string>
           </property>
          </widget>
         </item>
-        <item row="6" column="0">
-         <widget class="QListWidget" name="FormulaList">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="editTriggers">
-           <set>QAbstractItemView::DoubleClicked|QAbstractItemView::SelectedClicked</set>
-          </property>
-          <property name="resizeMode">
-           <enum>QListView::Adjust</enum>
-          </property>
-          <property name="itemAlignment">
-           <set>Qt::AlignLeading</set>
-          </property>
-         </widget>
-        </item>
-        <item row="5" column="0" colspan="2">
+        <item row="9" column="0">
          <widget class="QLabel" name="FormulaResult">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
@@ -177,7 +202,56 @@
           </property>
          </widget>
         </item>
-        <item row="0" column="6" rowspan="7">
+        <item row="8" column="0">
+         <widget class="QPushButton" name="AddVariavel">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(175, 175, 175);</string>
+          </property>
+          <property name="text">
+           <string>Add</string>
+          </property>
+         </widget>
+        </item>
+        <item row="3" column="0">
+         <widget class="FormulaInputClass" name="FormulaInput">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="font">
+           <font>
+            <family>Gill Sans Ultra Bold</family>
+           </font>
+          </property>
+          <property name="autoFillBackground">
+           <bool>false</bool>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(175, 175, 175);</string>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="dragEnabled">
+           <bool>true</bool>
+          </property>
+          <property name="placeholderText">
+           <string>F(x,y) = ax^n + by^k</string>
+          </property>
+          <property name="clearButtonEnabled">
+           <bool>false</bool>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="10" rowspan="15">
          <widget class="QGraphicsView" name="FormulaGraphic">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
@@ -185,8 +259,43 @@
             <verstretch>0</verstretch>
            </sizepolicy>
           </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(175, 175, 175);</string>
+          </property>
           <property name="transformationAnchor">
            <enum>QGraphicsView::NoAnchor</enum>
+          </property>
+         </widget>
+        </item>
+        <item row="14" column="0" colspan="2">
+         <widget class="QListWidget" name="FormulaList">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(175, 175, 175);</string>
+          </property>
+          <property name="editTriggers">
+           <set>QAbstractItemView::DoubleClicked|QAbstractItemView::SelectedClicked</set>
+          </property>
+          <property name="resizeMode">
+           <enum>QListView::Adjust</enum>
+          </property>
+          <property name="itemAlignment">
+           <set>Qt::AlignLeading</set>
+          </property>
+         </widget>
+        </item>
+        <item row="7" column="0">
+         <widget class="FormulaInputClass" name="VariavelInput">
+          <property name="styleSheet">
+           <string notr="true">background-color: rgb(175, 175, 175);</string>
+          </property>
+          <property name="placeholderText">
+           <string>X = 123.123</string>
           </property>
          </widget>
         </item>
@@ -207,22 +316,6 @@
         <string>Geometric</string>
        </attribute>
        <layout class="QGridLayout" name="gridLayout">
-        <item row="1" column="1">
-         <widget class="QListView" name="FormulaList_2">
-          <property name="sizePolicy">
-           <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
-            <horstretch>0</horstretch>
-            <verstretch>0</verstretch>
-           </sizepolicy>
-          </property>
-          <property name="cursor" stdset="0">
-           <cursorShape>ArrowCursor</cursorShape>
-          </property>
-          <property name="mouseTracking">
-           <bool>false</bool>
-          </property>
-         </widget>
-        </item>
         <item row="1" column="0">
          <widget class="QOpenGLWidget" name="Geometric_GL">
           <property name="sizePolicy">
@@ -293,6 +386,19 @@
           </property>
          </widget>
         </item>
+        <item row="1" column="1">
+         <widget class="QListWidget" name="FormulaList_2">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="editTriggers">
+           <set>QAbstractItemView::DoubleClicked|QAbstractItemView::SelectedClicked</set>
+          </property>
+         </widget>
+        </item>
        </layout>
       </widget>
      </widget>
@@ -306,14 +412,31 @@
      <x>0</x>
      <y>0</y>
      <width>819</width>
-     <height>21</height>
+     <height>19</height>
     </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>MS Shell Dlg 2</family>
+     <pointsize>8</pointsize>
+     <weight>50</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgb(59, 59, 59);
+font: 8pt &quot;MS Shell Dlg 2&quot;;
+text-color: rgb(255, 255, 255);</string>
    </property>
    <widget class="QMenu" name="menuFile">
     <property name="title">
      <string>File</string>
     </property>
     <widget class="QMenu" name="FileNew">
+     <property name="autoFillBackground">
+      <bool>false</bool>
+     </property>
      <property name="title">
       <string>new</string>
      </property>
@@ -412,6 +535,13 @@
    </property>
   </action>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>FormulaInputClass</class>
+   <extends>QLineEdit</extends>
+   <header>formulainputclass.h</header>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

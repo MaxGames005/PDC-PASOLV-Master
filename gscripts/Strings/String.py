@@ -13,15 +13,31 @@ class UntilFind:
         self.__string = string
         self.__char = char
         self.__stop = stop
-        self.__ufstring = self.ufind()
+        self.__ufstring = self.__ufind()
 
     def __new__(cls, string, char, stop=0):
         inst = super(cls.__class__, cls).__new__(cls)
         inst.__init__(string, char, stop)
         return inst.__ufstring
 
-    def ufind(self):
+    def __ufind(self):
         return self.__string[:self.__string.find(self.__char)+self.__stop]
+
+
+class AfterFind:
+    def __init__(self, string, char, start=0):
+        self.__string = string
+        self.__char = char
+        self.__start = start
+        self.__afstring = self.__affind()
+
+    def __new__(cls, string, char, start=0):
+        inst = super(AfterFind, cls).__new__(cls)
+        inst.__init__(string, char, start)
+        return inst.__afstring
+
+    def __affind(self):
+        return self.__string[self.__string.find(self.__char)+self.__start:]
 
 
 class String:

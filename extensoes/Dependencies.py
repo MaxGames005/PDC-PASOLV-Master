@@ -94,6 +94,8 @@ if GLOBAL_DEPENDENCIES["QT5"]:
 	pass
 from PyQt5 import *
 from PyQt5.QtWidgets import *
+from PyQt5.QtCore import *
+from PyQt5.QtGui import *
 """=========================================================="""
 
 """========================== Mayavi =========================="""

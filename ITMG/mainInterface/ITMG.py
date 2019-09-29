@@ -10,7 +10,7 @@ Interface Grafica do Pasolv Versao Master
 '''
 
 
-from Extensoes.Dependencies import *
+from extensoes.Dependencies import *
 from GetEnvPath import *"""
 
 version = "5"

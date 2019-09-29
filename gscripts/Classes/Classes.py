@@ -61,38 +61,19 @@ class IsEquatorFunction:
         return inst.__conclusion
 
     def verification(self):
-        verif = 0
-        index = 0
 
-        self.__split_eqf.append(UntilFind(self.__eqf, '('))
-        self.__eqf = self.__eqf.replace(self.__split_eqf[index], '')
-
-        verif += BooleanInt(not IsNone(self.__split_eqf[index]))
-        index += 1
-
-        self.__split_eqf.append(UntilFind(self.__eqf, ')', 1))
-        self.__eqf = self.__eqf.replace(self.__split_eqf[index], '')
-
-        verif += BooleanInt(not IsNone(self.__split_eqf[index].replace('(', '').replace(')', '')))
-        index += 1
-
+        string_before_sep = UntilFind(self.__eqf, '=')
+        if not string_before_sep:
+            return False
+        self.__eqf = self.__eqf.replace(string_before_sep, '')
+        self.__split_eqf.append(UntilFind(string_before_sep, '('))
+        self.__split_eqf.append(UntilFind(string_before_sep, ')', 1).replace(UntilFind(string_before_sep, '('), ''))
         self.__split_eqf.append(UntilFind(self.__eqf, '=', 1))
-        self.__eqf = self.__eqf.replace(self.__split_eqf[index], '')
-
-        verif += BooleanInt(not IsNone(self.__split_eqf[index]))
-        index += 1
-
+        self.__eqf = self.__eqf.replace(self.__split_eqf[-1], '')
+        if not self.__eqf:
+            return False
         self.__split_eqf.append(self.__eqf)
-        self.__eqf = self.__eqf.replace(self.__split_eqf[index], '')
-
-        verif += BooleanInt(not IsNone(self.__split_eqf[index]))
-
-        if self.__eqf:
-            return False, None
-        elif verif == 4:
-            return True, self.__split_eqf
-        else:
-            return False, None
+        return True
 
 
 class IsEquatorArg:
@@ -139,38 +120,18 @@ class EquatorFunction:
         return inst.__conclusion
 
     def verification(self):
-        verif = 0
-        index = 0
-
-        self.__split_eqf.append(UntilFind(self.__eqf, '('))
-        self.__eqf = self.__eqf.replace(self.__split_eqf[index], '')
-
-        verif += BooleanInt(not IsNone(self.__split_eqf[index]))
-        index += 1
-
-        self.__split_eqf.append(UntilFind(self.__eqf, ')', 1))
-        self.__eqf = self.__eqf.replace(self.__split_eqf[index], '')
-
-        verif += BooleanInt(not IsNone(self.__split_eqf[index].replace('(', '').replace(')', '')))
-        index += 1
-
+        string_before_sep = UntilFind(self.__eqf, '=')
+        if not string_before_sep:
+            return False
+        self.__eqf = self.__eqf.replace(string_before_sep, '')
+        self.__split_eqf.append(UntilFind(string_before_sep, '('))
+        self.__split_eqf.append(UntilFind(string_before_sep, ')', 1).replace(UntilFind(string_before_sep, '('), ''))
         self.__split_eqf.append(UntilFind(self.__eqf, '=', 1))
-        self.__eqf = self.__eqf.replace(self.__split_eqf[index], '')
-
-        verif += BooleanInt(not IsNone(self.__split_eqf[index]))
-        index += 1
-
+        self.__eqf = self.__eqf.replace(self.__split_eqf[-1], '')
+        if not self.__eqf:
+            return False
         self.__split_eqf.append(self.__eqf)
-        self.__eqf = self.__eqf.replace(self.__split_eqf[index], '')
-
-        verif += BooleanInt(not IsNone(self.__split_eqf[index]))
-
-        if self.__eqf:
-            return None
-        elif verif == 4:
-            return self.__split_eqf
-        else:
-            return None
+        return self.__split_eqf
 
 
 class ClearNones:
@@ -195,6 +156,60 @@ class ClearNones:
         return inst.__bufer
 
 
+class Redundancy:
+    """Redundancy é uma classe de checagem de dois objetos de tipos similares, verifica o encontro de uma redundancia
+    |USO|: Redundancy(list1,list2) ; |SAIDA|: True ou False depende se existe um termo redundante
+    |NOT_BREAK_ERROR|: Different Types Can't be able to Have Redundancy |EVER|: False """
+    def __init__(self, arg1, arg2):
+        self.__arg1 = arg1
+        self.__arg2 = arg2
+        self.__conclusion = self.__verify()
+
+    def __new__(cls, arg1, arg2):
+        inst = super(Redundancy, cls).__new__(cls)
+        inst.__init__(arg1, arg2)
+        return inst.__conclusion
+
+    def __verify(self):
+        if isinstance(self.__arg1, type(self.__arg2)):
+            if isinstance(self.__arg1, dict):
+                for key in self.__arg1:
+                    if key in self.__arg2:
+                        return True
+                return False
+            elif isinstance(self.__arg1, list) or isinstance(self.__arg1, tuple):
+                for item in self.__arg1:
+                    if item in self.__arg2:
+                        return True
+                return False
+            else:
+                return False
+        else:
+            #print("Error Different Types Can't be Redundant")
+            return False
+
+
+class TryDo:
+    def __init__(self, element, *args, **kwargs, ):
+        self.__obj = element
+        self.__args = args
+        try:
+            self.__callback = kwargs['callback']
+        except:
+            self.__callback = lambda ev: ev
+        self.__return = self.__doatry()
+
+    def __new__(cls, element, *args, **kwargs):
+        inst = super(TryDo, cls).__new__(cls)
+        inst.__init__(element, *args, **kwargs)
+        return inst.__return
+
+    def __doatry(self):
+        try:
+            return self.__obj(*self.__args)
+        except Exception as excpt:
+            self.__callback(excpt)
+            return None
 
 
 

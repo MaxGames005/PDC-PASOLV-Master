@@ -17,59 +17,99 @@ class PasolvMain(QtWidgets.QMainWindow,QOpenGLWidget):
         self.formula_label_text = self.ui.FormulaLabel.text()
         self.formula_result_text = self.ui.FormulaResult.text()
         self.form = Formula(self)
-        self.varmode = False
+        self.operate_mode = False
         self.funcaoatual = None
         self.formula_input_text = self.ui.FormulaInput.text()
-        self.ui.AddFormula.clicked.connect(lambda: self.AddFormulaToList(self.ui.FormulaList, self.ui.FormulaInput))
-        self.ui.FormulaInput.returnPressed.connect(lambda: self.AddFormulaToList(self.ui.FormulaList,
-                                                                                 self.ui.FormulaInput))
-        self.ui.FormulaInput.textChanged.connect(self.InputFormula)
-        self.ui.FormulaList.clicked.connect(self.ListsOfFormulas)
+        self.ui.AddFormula.clicked.connect(lambda: self.add_to_list(self.ui.FormulaList,
+                                                                    self.ui.FormulaList_2,
+                                                                    self.ui.FormulaInput))
+        self.ui.FormulaInput.returnPressed.connect(lambda: self.add_to_list(self.ui.FormulaList,
+                                                                            self.ui.FormulaList_2,
+                                                                            self.ui.FormulaInput))
+        self.ui.FormulaList.clicked.connect(self.set_operation)
+        self.ui.FormulaList.clicked.connect(self.operate)
+        self.ui.VariavelInput.returnPressed.connect(lambda: self.add_var(self.ui.FormulaList,
+                                                                        self.ui.FormulaList_2,
+                                                                        self.ui.VariavelInput))
+
         self.initializeGL()
         self.dci = {}
+        self.ItemsList = {}
+        self.selected_item = None
+        self.VarList = {}
 
-    def ListsOfFormulas(self, item):
-        self.varmode = True
-        fshow = f'{self.formula_label_text} {item.data()}'
-        self.ui.FormulaLabel.setText(fshow)
-        fname = item.data()[:item.data().find('(')].replace(' ', '')
-        self.funcaoatual = self.dci[fname]
+    def set_operation(self, item):
+        self.selected_item = item
 
+    def operate(self, item):
+        self.ui.FormulaLabel.setText(str(Eqt.show_function(item.data(-1))))
+        self.operate_mode = True
+
+    def add_var(self, List, List2, Input):
+        if Input.text():
+            if Eqt.add_var(Input.text()):
+                self.ui.FormulaResult.setText(Eqt.add_var(Input.text()))
+            else:
+                if not Eqt.last_var()[0] in self.VarList:
+                    item = QListWidgetItem(QIcon(GPC.Recursos + 'varicon.png'),
+                                           Eqt.last_var()[2])
+                    item.setData(-1, Eqt.last_var()[0])
+                    item.setData(4, Eqt.last_var()[1])
+                    List.addItem(item)
+                    self.VarList[Eqt.last_var()[0]] = self.find_match(List, Eqt.last_var()[0])
+                    Input.clear()
+                    self.ui.FormulaResult.setText(self.formula_result_text)
+                else:
+                    self.VarList[Eqt.last_var()[0]].setData(4, Eqt.last_var()[1])
+                    self.VarList[Eqt.last_var()[0]].setData(0, Eqt.last_var()[2])
+                    Input.clear()
+                    self.ui.FormulaResult.setText(self.formula_result_text)
 
     def mousePressEvent(self, event):
-        self.varmode = False
-        self.ui.FormulaResult.setText(self.formula_result_text)
+        self.operate_mode = False
         self.ui.FormulaLabel.setText(self.formula_label_text)
-        if not self.ui.FormulaInput.text():
-            self.NewInputRoutine()
+        self.ui.FormulaResult.setText(self.formula_result_text)
 
     """<PyQt5.QtCore.QModelIndex object at 0x0000020045F95048>"""
-    def InputFormula(self):
-        if not self.changed:
-            self.ui.FormulaInput.clear()
-            self.changed = True
+    def format_formula_input(self):
+        pass
 
-    def NewInputRoutine(self):
-        self.ui.FormulaInput.clear()
-        self.ui.FormulaInput.setText(self.formula_input_text)
-        self.ui.FormulaInput.textChanged.connect(self.InputFormula)
-        self.changed = False
+    def formula_input_routine(self):
+        pass
 
-    def AddFormulaToList(self, List, Input):
-        if not self.varmode:
+    def add_to_list(self, List, List2, Input):
+        if Input.text():
+            if not self.operate_mode:
+                if Eqt.add(Input.text()):
+                    self.ui.FormulaResult.setText(Eqt.add(Input.text()))
+                else:
+                    if Eqt.last_added()[0] not in [keys for keys in self.ItemsList]:
+                        item = QListWidgetItem(QIcon(GPC.Recursos + 'functionicon.png'), Eqt.last_added()[1].replace('=', ' = '))
+                        item.setData(-1, Eqt.last_added()[0])
+                        item.setData(4, lambda args: Eqt.operate(Eqt.last_added()[0], args))
+                        List.addItem(item)
+                        #List2.addItem(item)
+                        self.ItemsList[Eqt.last_added()[0]] = self.find_match(List, Eqt.last_added()[0])
+                        Input.clear()
+                    else:
+                        self.ItemsList[Eqt.last_added()[0]].setData(4, lambda args: Eqt.operate(Eqt.last_added()[0], args))
+                        self.ItemsList[Eqt.last_added()[0]].setData(0, Eqt.last_added()[1].replace('=', ' = '))
+                        Input.clear()
+            else:
+                string = self.ui.FormulaInput.text()
+                self.ui.ResultOutPut.setText(str(Eqt.operate(self.selected_item.data(-1), string)))
+                if isinstance(Eqt.operate(self.selected_item.data(-1), string), str):
+                    self.mousePressEvent(None)
+                self.ui.FormulaInput.clear()
 
-            self.form.add(Input.text())
-            fobj, fname, farg, fbody = self.form.get()
-            if fname not in self.dci and fname and farg:
-                List.addItem(f"{fname+'('+farg+')'}: {fbody}")
-            self.dci[fname] = fobj
-            self.NewInputRoutine()
-        else:
-            if self.varmode:
-                self.addArgToFunction(Input.text(), self.funcaoatual)
+    @staticmethod
+    def find_match(List, name1, ids=-1):
+        for i in range(List.count()):
+            if List.item(i).data(ids) == name1:
+                return List.item(i)
 
     def addArgToFunction(self, args, funsc):
-        if self.varmode:
+        if self.operate_mode:
             self.ui.FormulaResult.setText(f'{self.formula_result_text} {self.form.varadd_andgetresult(args, funsc)}')
         pass
 
@@ -87,7 +127,7 @@ class QtRun:
                 sys.exit(self.__dict__["app"].exec())
 
 
-
+Eqt.add('f(x)=-')
 
 
 
@@ -98,16 +138,6 @@ Initializer
 
 
 if __name__ == "__main__":
-    pass
-    #QtRun().PasolvMain
+    QtRun().PasolvMain
 
 
-"""
-Button
-background_color             cor de fundo do botao                              0
-background_disabled_down     imagem do botao desabilitado pressionado           1
-background_disabled_normal   imagem do botao desabilitado normal                2
-background_down              imagem do botao pressionado                        3
-background_normal            imagem do botao normal                             4
-border                       is a ListProperty and defaults to (16, 16, 16, 16) 5
-"""
