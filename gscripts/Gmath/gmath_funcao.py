@@ -11,7 +11,8 @@ DBG = 'debug'
 Dct = 'dict'
 Var = 'var'
 Cb = 'callback'
-restrict = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_"
+restrict = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_,()"
+baned_words = ['system', 'debug', 'print', 'import', 'from']
 
 
 class Equator:
@@ -153,7 +154,7 @@ class Equator:
                 return self.turn_function_object()
             self.add_function_dict()
         else:
-            if not nome:
+            if not nome or not IsEquatorFunction(string_function):
                 return "Invalid Syntax"
             else:
                 return 'Name Is Already Occupied'
@@ -177,21 +178,37 @@ class Equator:
     def last_added(self):
         return self.__fname, self.__last
 
-    @staticmethod
-    def match_chars(string1, string2):
-        match = None
-        for char in string1:
-            if char in string2:
-                match = True
-            else:
-                match = False
-                break
-        return match
+    def match_chars(self, string1, string2):
+        if not self.has_banned_word(string1):
+            match = None
+            for char in string1:
+                if char in string2:
+                    match = True
+                else:
+                    match = False
+                    break
+            return match
+        else:
+            return self.has_banned_word(string1)
+
+    def has_banned_word(self, string):
+        for banw in baned_words:
+            if banw in string:
+                return banw
+        return False
 
     def add_var(self, string):
         vname , value = self.add_var_format(string)
-        if self.match_chars(vname, restrict) and vname not in self.__dictf:
+        if not isinstance(self.match_chars(vname, restrict), str) and self.match_chars(vname, restrict)\
+                and vname not in self.__dictf and not self.has_banned_word(value):
             try:
+                last = None
+                try:
+                    for variable in self.__excstring:
+                        last = variable, self.__excstring
+                        exec(self.__excstring[variable])
+                except:
+                    return "Unknown Error: " + str(last)
                 self.__cls_vars[Dct][Var][vname] = eval(value)
                 self.__excstring[vname] = f'{vname} = {eval(value)}\n'
                 self.__last_var = vname, eval(value), f'{vname} = {eval(value)}'
@@ -201,6 +218,10 @@ class Equator:
         else:
             if vname in self.__dictf:
                 return 'Name Is Already Occupied'
+            elif isinstance(self.match_chars(vname, restrict), str):
+                return "Banned Word: " + self.match_chars(vname, restrict)
+            elif self.has_banned_word(value):
+                return "Banned Word: " + self.has_banned_word(value)
             else:
                 return "Invalid Characters:" + self.restrict_chars(vname)
 
@@ -256,9 +277,20 @@ class Equator:
     def turn_function_object(self):
         try:
             self.__cls_vars[F][obj] = eval(f'lambda {self.format_arg()}: {self.__fbody}')
+            self.__excstring[self.__fname] = f'{self.__fname} = lambda {self.format_arg()}: {self.__fbody}\n'
             self.update()
         except:
             return "Erro No Corpo Da Função: "+str(self.__fbody)
+
+    def execute(self):
+        last = None
+        try:
+            for variable in self.__excstring:
+                last = variable, self.__excstring
+                exec(self.__excstring[variable])
+            return None
+        except:
+            return "Unknown Error: " + str(last)
 
     def transform_arg(self, args):
         last = None
@@ -268,6 +300,7 @@ class Equator:
                 exec(self.__excstring[variable])
         except:
             return "Unknown Error: " + str(last)
+
         try:
             self.__cls_vars[arg][obj] = eval(f'({args})')
             self.update()
@@ -298,9 +331,18 @@ class Equator:
         except:
             return "Math Error"
 
-    def remove_var(self, vname):
-        if vname not in self.__dict_var:
-            return "Not Found: " + vname
+    def remove(self, name):
+        if name not in self.__dict_var and name not in self.__dictf:
+            return "Not Found: " + name
+        elif name in self.__dictf:
+            self.__dictf.pop(name)
+            self.__excstring.pop(name)
+        elif name in self.__dict_var:
+            self.__dict_var.pop(name)
+            self.__excstring.pop(name)
+        else:
+            return 'Erro Cabuloso!!'
+
 
 
 Eqt = Equator()

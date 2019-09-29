@@ -31,15 +31,20 @@ class PasolvMain(QtWidgets.QMainWindow,QOpenGLWidget):
         self.ui.VariavelInput.returnPressed.connect(lambda: self.add_var(self.ui.FormulaList,
                                                                         self.ui.FormulaList_2,
                                                                         self.ui.VariavelInput))
-
+        self.ui.AddVariavel.clicked.connect(lambda: self.add_var(self.ui.FormulaList,
+                                                                 self.ui.FormulaList_2,
+                                                                 self.ui.VariavelInput))
+        self.ui.RemoveItem.clicked.connect(self.remove)
         self.initializeGL()
         self.dci = {}
         self.ItemsList = {}
         self.selected_item = None
         self.VarList = {}
+        self.ui.AboutCreator.triggered.connect(self.about_creator)
+
 
     def set_operation(self, item):
-        self.selected_item = item
+        self.selected_item = item.data(5)
 
     def operate(self, item):
         self.ui.FormulaLabel.setText(str(Eqt.show_function(item.data(-1))))
@@ -55,7 +60,9 @@ class PasolvMain(QtWidgets.QMainWindow,QOpenGLWidget):
                                            Eqt.last_var()[2])
                     item.setData(-1, Eqt.last_var()[0])
                     item.setData(4, Eqt.last_var()[1])
+                    item.setData(5, item)
                     List.addItem(item)
+                    List2.addItem(item)
                     self.VarList[Eqt.last_var()[0]] = self.find_match(List, Eqt.last_var()[0])
                     Input.clear()
                     self.ui.FormulaResult.setText(self.formula_result_text)
@@ -69,8 +76,9 @@ class PasolvMain(QtWidgets.QMainWindow,QOpenGLWidget):
         self.operate_mode = False
         self.ui.FormulaLabel.setText(self.formula_label_text)
         self.ui.FormulaResult.setText(self.formula_result_text)
+        self.ui.FormulaList.clearSelection()
+        self.selected_item = None
 
-    """<PyQt5.QtCore.QModelIndex object at 0x0000020045F95048>"""
     def format_formula_input(self):
         pass
 
@@ -87,8 +95,9 @@ class PasolvMain(QtWidgets.QMainWindow,QOpenGLWidget):
                         item = QListWidgetItem(QIcon(GPC.Recursos + 'functionicon.png'), Eqt.last_added()[1].replace('=', ' = '))
                         item.setData(-1, Eqt.last_added()[0])
                         item.setData(4, lambda args: Eqt.operate(Eqt.last_added()[0], args))
+                        item.setData(5, item)
                         List.addItem(item)
-                        #List2.addItem(item)
+                        List2.addItem(item)
                         self.ItemsList[Eqt.last_added()[0]] = self.find_match(List, Eqt.last_added()[0])
                         Input.clear()
                     else:
@@ -102,6 +111,18 @@ class PasolvMain(QtWidgets.QMainWindow,QOpenGLWidget):
                     self.mousePressEvent(None)
                 self.ui.FormulaInput.clear()
 
+    def remove(self, event):
+        if self.selected_item:
+            self.ui.FormulaLabel.setText(self.formula_label_text)
+            self.operate_mode = False
+            self.ui.FormulaList.clearSelection()
+            msg = Eqt.remove(str(self.selected_item.data(-1)))
+            if msg:
+                print(msg)
+            self.ui.FormulaList.model().removeRow(self.ui.FormulaList.row(self.selected_item))
+        else:
+            self.ui.ResultOutPut.setText('Nenhum Item Selecionado')
+
     @staticmethod
     def find_match(List, name1, ids=-1):
         for i in range(List.count()):
@@ -113,6 +134,10 @@ class PasolvMain(QtWidgets.QMainWindow,QOpenGLWidget):
             self.ui.FormulaResult.setText(f'{self.formula_result_text} {self.form.varadd_andgetresult(args, funsc)}')
         pass
 
+    def about_creator(self, event):
+        about = QMessageBox()
+        about.setStyleSheet("background-color: rgb(175, 175, 175);")
+        about.information(about, "Creator", "Guilherme R. Chiodi\nENFI: 2018-2019")
 
 APP = "Aplication"
 
@@ -139,5 +164,7 @@ Initializer
 
 if __name__ == "__main__":
     QtRun().PasolvMain
+
+
 
 

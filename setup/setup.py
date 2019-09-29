@@ -1,9 +1,9 @@
 from setuptools import setup
 
 setup(
-    name='PASOLV Kivy',
-    version='0.1.065',
-    packages=[''],
+    name='PDC Pasolv Master 0.87.5',
+    version='0.87.5',
+    packages=['PDC_PASOLV_App.py'],
     url='None',
     license='None',
     author='MaxGames005',

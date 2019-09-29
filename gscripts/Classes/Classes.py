@@ -63,7 +63,7 @@ class IsEquatorFunction:
     def verification(self):
 
         string_before_sep = UntilFind(self.__eqf, '=')
-        if not string_before_sep:
+        if not string_before_sep or self.__eqf.find('=') == -1:
             return False
         self.__eqf = self.__eqf.replace(string_before_sep, '')
         self.__split_eqf.append(UntilFind(string_before_sep, '('))
