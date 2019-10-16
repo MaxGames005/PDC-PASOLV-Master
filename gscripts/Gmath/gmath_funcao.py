@@ -1,19 +1,6 @@
 from gscripts.Gmath.gmath_extensao import *
 from gscripts.Classes.Classes import *
 
-"""=====Type Keys"""
-F = 'function'
-arg = 'arg'
-sep = 'sep'
-body = 'body'
-obj = 'obj'
-DBG = 'debug'
-Dct = 'dict'
-Var = 'var'
-Cb = 'callback'
-restrict = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_,()"
-baned_words = ['system', 'debug', 'print', 'import', 'from']
-
 
 class Equator:
     """Equator gera objetos atraves de string em formato de equação

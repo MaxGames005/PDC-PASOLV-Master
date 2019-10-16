@@ -1,0 +1,16 @@
+﻿app.factory('siteRepository', function ($resource) {
+  return {
+    getViewModel: function () {
+      return viewModel;
+    },
+    save: function (model) {
+      return $resource('/Evento/CorrigirEmail').save({ model: JSON.stringify(model) });
+    },
+    enviarContato: function (model, keyEvent) {
+      return $resource('/Auxiliar/ContatoOrganizadorSite').save({ model: JSON.stringify(model), keyEvent: keyEvent });
+    },
+    enviarContatoWhiteLabel: function (model, keyEvent) {
+      return $resource('/Auxiliar/ContatoOrganizadorSiteWhiteLabel').save({ model: JSON.stringify(model), keyEvent: keyEvent });
+    },
+  }
+});

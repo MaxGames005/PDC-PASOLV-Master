@@ -179,7 +179,7 @@ class Ui_PasolvMainWindow(object):
         self.P_tab1.setObjectName("P_tab1")
         self.gridLayout = QtWidgets.QGridLayout(self.P_tab1)
         self.gridLayout.setObjectName("gridLayout")
-        self.Geometric_GL = QtWidgets.QOpenGLWidget(self.P_tab1)
+        self.Geometric_GL = GeometricGLClass(self.P_tab1)
         sizePolicy = QtWidgets.QSizePolicy(QtWidgets.QSizePolicy.Expanding, QtWidgets.QSizePolicy.Expanding)
         sizePolicy.setHorizontalStretch(0)
         sizePolicy.setVerticalStretch(0)
@@ -296,7 +296,7 @@ class Ui_PasolvMainWindow(object):
         self.menubar.addAction(self.menuAbout.menuAction())
 
         self.retranslateUi(PasolvMainWindow)
-        self.PasolvTabs.setCurrentIndex(0)
+        self.PasolvTabs.setCurrentIndex(1)
         QtCore.QMetaObject.connectSlotsByName(PasolvMainWindow)
 
     def retranslateUi(self, PasolvMainWindow):
@@ -333,3 +333,4 @@ class Ui_PasolvMainWindow(object):
         self.AboutCreator.setText(_translate("PasolvMainWindow", "Creator"))
         self.AboutPDC_Pasolv_Master.setText(_translate("PasolvMainWindow", "PDC Pasolv Master"))
 from formulainputclass import FormulaInputClass
+from geometricglclass import GeometricGLClass

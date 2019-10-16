@@ -1,0 +1,143 @@
+
+//http://huei90.github.io/angular-validation/#examples
+//Todas as regex tem que permitir string em branco (https://github.com/huei90/angular-validation/issues/193)
+
+(function () {
+  angular.module('validation.rule', ['validation'])
+      .config(['$validationProvider',
+          function ($validationProvider) {
+
+            function stripHtml(value) {
+              // remove html tags and space chars
+              return value.replace(/<.[^<>]*?>/g, ' ').replace(/&nbsp;|&#160;/gi, ' ')
+              // remove punctuation
+              .replace(/[.(),;:!?%#$'"_+=\/\-]*/g, '');
+            }
+
+            var expression = {
+              required: function (value) {
+                return !!value;
+              },
+              url: function (value) {
+                var pattern = new RegExp("^(?:(?:https?|ftp)://)(?:\\S+(?::\\S*)?@)?(?:(?!(?:10|127)(?:\\.\\d{1,3}){3})(?!(?:169\\.254|192\\.168)(?:\\.\\d{1,3}){2})(?!172\\.(?:1[6-9]|2\\d|3[0-1])(?:\\.\\d{1,3}){2})(?:[1-9]\\d?|1\\d\\d|2[01]\\d|22[0-3])(?:\\.(?:1?\\d{1,2}|2[0-4]\\d|25[0-5])){2}(?:\\.(?:[1-9]\\d?|1\\d\\d|2[0-4]\\d|25[0-4]))|(?:(?:[a-z\\u00a1-\\uffff0-9]-*)*[a-z\\u00a1-\\uffff0-9]+)(?:\\.(?:[a-z\\u00a1-\\uffff0-9]-*)*[a-z\\u00a1-\\uffff0-9]+)*(?:\\.(?:[a-z\\u00a1-\\uffff]{2,}))\\.?)(?::\\d{2,5})?(?:[/?#]\\S*)?$", "i");
+                if (value) {
+                  return pattern.test(value);
+                } else {
+                  return true;
+                }
+              },
+              email: /(^$|^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$)/,
+              number: /^\d+$/,
+              minlength: function (value, scope, element, attrs, param) {
+                return value.length >= param;
+              },
+              maxlength: function (value, scope, element, attrs, param) {
+                return value.length <= param;
+              },
+              maxwords: function (value, scope, element, attrs, param) {
+                return stripHtml(value).match(/\b\S+\b/g).length <= param;
+              },
+              minwords: function (value, scope, element, attrs, param) {
+                return stripHtml(value).match(/\b\S+\b/g).length >= param;
+              },
+              cpf: function (value) {
+                value = value.replace('.', '');
+                value = value.replace('.', '');
+                cpf = value.replace('-', '');
+                while (cpf.length < 11) cpf = "0" + cpf;
+                var expReg = /^0+$|^1+$|^2+$|^3+$|^4+$|^5+$|^6+$|^7+$|^8+$|^9+$/;
+                var a = [];
+                var b = new Number;
+                var c = 11;
+                for (i = 0; i < 11; i++) {
+                  a[i] = cpf.charAt(i);
+                  if (i < 9) b += (a[i] * --c);
+                }
+                if ((x = b % 11) < 2) { a[9] = 0 } else { a[9] = 11 - x }
+                b = 0;
+                c = 11;
+                for (y = 0; y < 10; y++) b += (a[y] * c--);
+                if ((x = b % 11) < 2) { a[10] = 0; } else { a[10] = 11 - x; }
+                if ((cpf.charAt(9) != a[9]) || (cpf.charAt(10) != a[10]) || cpf.match(expReg)) return false;
+                return true;
+              },
+              nowhitespace: function (value) {
+                return /^\S+$/i.test(value);
+              },
+              alphanumeric: function (value) {
+                return /^\w+$/i.test(value);
+              }
+            };
+
+            var defaultMsg = {
+              required: {
+                error: '{{\'Valid_CampoRequerido\'|translate}}',
+                success: ' '
+              },
+              url: {
+                error: '{{\'Valid_FornecaUrlValida\'|translate}}',
+                success: ' '
+              },
+              email: {
+                error: '{{\'Valid_FornecaEmailValido\'|translate}}',
+                success: ' '
+              },
+              number: {
+                error: 'This should be Number',
+                success: 'It\'s Number'
+              },
+              minlength: {
+                error: '{{\'Valid_NaoAtingiuLimiteMinimoCaracteres\'|translate}}',
+                success: ' '
+              },
+              maxlength: {
+                error: '{{\'Valid_LimiteMaximoCaracteresUltrapassado\'|translate}}',
+                success: ' '
+              },
+              maxwords: {
+                error: '{{\'Valid_LimiteMaximoPalavrasUltrapassado\'|translate}}',
+                success: ' '
+              },
+              minwords: {
+                error: '{{\'Valid_NaoAtingiuLimiteMinimoPalavras\'|translate}}',
+                success: ' '
+              },
+              cpf: {
+                error: '{{\'Valid_InformeUmCpfValido\'|translate}}',
+                success: ' '
+              },
+              nowhitespace: {
+                error: '{{\'Valid_NaoUtilizeEspacoBranco\'|translate}}',
+                success: ' '
+              },
+              alphanumeric: {
+                error: '{{\'Valid_SomenteLetrasNumeros\'|translate}}',
+                success: ' '
+              },
+              minnumber: {
+                error: '{{\'Valid_ValorNaoPodeMenorUm\'|translate}}',
+                success: ' '
+              }
+            };
+
+            $validationProvider.setExpression(expression).setDefaultMsg(defaultMsg);
+
+            $validationProvider.setErrorHTML(function (msg) {
+              return "<label class=\"error\">" + msg + "</label>";
+            });
+
+            angular.extend($validationProvider, {
+              validCallback: function (element) {
+                $(element).parents('.form-group:first').removeClass('has-error');
+              },
+              invalidCallback: function (element) {
+                $(element).parents('.form-group:first').addClass('has-error');
+              }
+            });
+
+
+
+          }
+      ]);
+
+}).call(this);

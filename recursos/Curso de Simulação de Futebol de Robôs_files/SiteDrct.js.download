@@ -1,0 +1,17 @@
+﻿app.directive('dynamic', function ($compile) {
+  return {
+    restrict: 'A',
+    replace: true,
+    link: function (scope, ele, attrs) {
+      scope.bindData = {};
+      scope.$watch(attrs.dynamic, function (dynamic) {
+
+        ele.html(dynamic.template); 
+
+        $compile(ele.contents())(scope);
+
+        scope.areaSiteEvento = dynamic; 
+      }, true); 
+    }
+  };
+});

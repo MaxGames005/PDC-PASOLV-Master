@@ -104,7 +104,36 @@ if GLOBAL_DEPENDENCIES["MAYAVI"]:
 	from mayavi import *
 """============================================================"""
 
+"""======================Colored Debug========================="""
+from colorama import Fore, Back, Style
+from colorama import init
+from termcolor import colored
 
+
+def alert(string):
+	init()
+	print(colored(string, 'red'))
+
+
+"""============================================================"""
+
+"""===========================Global Naming================================="""
+OBJECT = "GObject"
+
+"""=====Type Keys===="""
+F = 'function'
+arg = 'arg'
+sep = 'sep'
+body = 'body'
+obj = 'obj'
+DBG = 'debug'
+Dct = 'dict'
+Var = 'var'
+Cb = 'callback'
+restrict = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789_,()"
+baned_words = ['system', 'debug', 'print', 'import', 'from']
+
+"""========================================================================="""
 
 
 

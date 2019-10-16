@@ -71,7 +71,7 @@
        <string notr="true">background-color: rgb(81, 81, 81);</string>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="P_tab2">
        <property name="sizePolicy">
@@ -333,7 +333,7 @@
        </attribute>
        <layout class="QGridLayout" name="gridLayout">
         <item row="1" column="0">
-         <widget class="QOpenGLWidget" name="Geometric_GL">
+         <widget class="GeometricGLClass" name="Geometric_GL">
           <property name="sizePolicy">
            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
             <horstretch>0</horstretch>
@@ -562,6 +562,11 @@ text-color: rgb(255, 255, 255);</string>
    <class>FormulaInputClass</class>
    <extends>QLineEdit</extends>
    <header>formulainputclass.h</header>
+  </customwidget>
+  <customwidget>
+   <class>GeometricGLClass</class>
+   <extends>QOpenGLWidget</extends>
+   <header>geometricglclass.h</header>
   </customwidget>
  </customwidgets>
  <resources/>

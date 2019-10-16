@@ -1,0 +1,36 @@
+﻿app.filter('retornaModalidade', function ($filter) {
+  return function (input, scope) {
+    var l = scope.viewModel.modalidades
+    for (var i = 0; i < l.length; ++i) {
+      if (l[i].id === input) {
+        return l[i].denominacao;
+      }
+    }
+  }
+});
+
+app.filter('retornaAreaTematica', function ($filter) {
+  return function (input, scope) {
+    var l = scope.viewModel.areasTematicas
+    for (var i = 0; i < l.length; ++i) {
+      if (l[i].id === input) {
+        return l[i].denominacao;
+      }
+    }
+  }
+});
+
+app.filter('retornarJutificativaParecer', function ($filter) {
+  return function (input) {
+    if (input == 2) return "Justificativa:  <span class='text-muted text-sm'>(opcional)</span>"
+    else if (input == 3) return "Solicitar as seguintes revisões ao participante:"
+    else if (input == 4) return "Justificativa a ser enviada ao participante:"
+    else return "Justificativa:"
+  }
+});
+
+app.filter('trusted', function ($sce) {
+  return function (html) {
+    return $sce.trustAsHtml(html)
+  }
+});

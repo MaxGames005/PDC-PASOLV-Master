@@ -8,7 +8,7 @@ QT Aplication
 """
 
 
-class PasolvMain(QtWidgets.QMainWindow,QOpenGLWidget):
+class PasolvMain(QtWidgets.QMainWindow, QOpenGLWidget):
     def __init__(self):
         super(self.__class__, self).__init__()
         self.ui = Ui_PasolvMainWindow()
@@ -143,13 +143,20 @@ APP = "Aplication"
 
 
 class QtRun:
+    def __init__(self, initialize=True):
+        self.init = initialize
+        pass
+
     def __getattr__(self, name):
-        if name not in self.__dict__:
-            if "Main" in name:
-                self.__dict__["app"] = QtWidgets.QApplication(sys.argv)
-                self.__dict__[APP] = eval(name)()
-                self.__dict__[APP].show()
-                sys.exit(self.__dict__["app"].exec())
+        if self.init:
+            if name not in self.__dict__:
+                if "Main" in name:
+                    self.__dict__["app"] = QtWidgets.QApplication(sys.argv)
+                    self.__dict__[APP] = eval(name)()
+                    self.__dict__[APP].show()
+                    sys.exit(self.__dict__["app"].exec())
+        else:
+            pass
 
 
 Eqt.add('f(x)=-')

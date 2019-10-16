@@ -1,16 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/geometricglclass.py" line="314" mnemonic="3" />
+    <bookmark url="file://$PROJECT_DIR$/geometricglclass.py" line="225" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="d1c0da13-2362-4c76-917c-8538052c47ac" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/geometricglclass.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/GetEnvPath.py" beforeDir="false" afterPath="$PROJECT_DIR$/GetEnvPath.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ITMG/PDC Pasolv Master.py" beforeDir="false" afterPath="$PROJECT_DIR$/ITMG/PDC Pasolv Master.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ITMG/PDC Pasolv Master.ui" beforeDir="false" afterPath="$PROJECT_DIR$/ITMG/PDC Pasolv Master.ui" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PDC_PASOLV_App.py" beforeDir="false" afterPath="$PROJECT_DIR$/PDC_PASOLV_App.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gscripts/Classes/Classes.py" beforeDir="false" afterPath="$PROJECT_DIR$/gscripts/Classes/Classes.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extensoes/Dependencies.py" beforeDir="false" afterPath="$PROJECT_DIR$/extensoes/Dependencies.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gscripts/Gmath/gmath_funcao.py" beforeDir="false" afterPath="$PROJECT_DIR$/gscripts/Gmath/gmath_funcao.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/interfaces/Interface.py" beforeDir="false" afterPath="$PROJECT_DIR$/interfaces/Interface.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup/setup.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +29,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/PDC_PASOLV_App.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="132" column="29" lean-forward="true" selection-start-line="132" selection-start-column="29" selection-end-line="132" selection-end-column="29" />
+            <state relative-caret-position="235">
+              <caret line="141" column="18" lean-forward="true" selection-start-line="141" selection-start-column="18" selection-end-line="141" selection-end-column="18" />
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
@@ -36,19 +39,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/GetEnvPath.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="2" column="57" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/interfaces/Interface.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="201">
-              <caret line="305" column="65" selection-start-line="305" selection-start-column="65" selection-end-line="305" selection-end-column="65" />
+            <state relative-caret-position="475">
+              <caret line="157" column="13" selection-start-line="157" selection-start-column="13" selection-end-line="157" selection-end-column="13" />
               <folding>
                 <element signature="e#52#88#0" expanded="true" />
               </folding>
@@ -56,23 +50,50 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gscripts/Gmath/gmath.py">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/geometricglclass.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="75" column="91" lean-forward="true" selection-start-line="75" selection-start-column="12" selection-end-line="75" selection-end-column="91" />
-              <folding>
-                <element signature="e#10#46#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="331">
+              <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/extensoes/Dependencies.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2928">
+              <caret line="122" column="21" selection-start-line="122" selection-start-column="21" selection-end-line="122" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/formulainputclass.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/GetEnvPath.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gscripts/Gmath/gmath_funcao.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="249">
-              <caret line="159" column="49" lean-forward="true" selection-start-line="159" selection-start-column="49" selection-end-line="159" selection-end-column="49" />
+            <state relative-caret-position="-264">
+              <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
+              <folding>
+                <element signature="e#0#43#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -80,17 +101,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gscripts/Classes/Classes.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="104">
-              <caret line="65" column="62" selection-start-line="65" selection-start-column="62" selection-end-line="65" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/pyface/ui/qt4/code_editor/code_widget.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12384">
-              <caret line="527" column="13" selection-start-line="527" selection-start-column="13" selection-end-line="527" selection-end-column="13" />
+            <state relative-caret-position="1608">
+              <caret line="67" column="41" selection-start-line="67" selection-start-column="41" selection-end-line="67" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -148,6 +160,7 @@
       <find>print</find>
       <find>icon</find>
       <find>IsEquatorF</find>
+      <find>.quad</find>
     </findStrings>
     <replaceStrings>
       <replace>=</replace>
@@ -167,6 +180,7 @@
       <replace>set_operation</replace>
       <replace>operate_mode</replace>
       <replace>add_var</replace>
+      <replace>.__quad</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -210,14 +224,17 @@
         <option value="$PROJECT_DIR$/gscripts/Gmath/gmath.py" />
         <option value="$PROJECT_DIR$/variavelinputclass.py" />
         <option value="$PROJECT_DIR$/formulainputclass.py" />
-        <option value="$PROJECT_DIR$/extensoes/Dependencies.py" />
         <option value="$PROJECT_DIR$/gscripts/Strings/String.py" />
         <option value="$PROJECT_DIR$/GetEnvPath.py" />
-        <option value="$PROJECT_DIR$/PDC_PASOLV_App.py" />
         <option value="$PROJECT_DIR$/gscripts/Classes/Classes.py" />
-        <option value="$PROJECT_DIR$/gscripts/Gmath/gmath_funcao.py" />
-        <option value="$PROJECT_DIR$/interfaces/Interface.py" />
         <option value="$PROJECT_DIR$/setup/setup.py" />
+        <option value="$PROJECT_DIR$/../New Law of Physic/Game/TheGame.py" />
+        <option value="$PROJECT_DIR$/interfaces/Interface.py" />
+        <option value="$PROJECT_DIR$/gscripts/Geometric/Geometric.py" />
+        <option value="$PROJECT_DIR$/PDC_PASOLV_App.py" />
+        <option value="$PROJECT_DIR$/gscripts/Gmath/gmath_funcao.py" />
+        <option value="$PROJECT_DIR$/extensoes/Dependencies.py" />
+        <option value="$PROJECT_DIR$/geometricglclass.py" />
       </list>
     </option>
   </component>
@@ -233,6 +250,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -248,6 +266,11 @@
             <path>
               <item name="PDC PASOLV Master" type="b2602c69:ProjectViewProjectNode" />
               <item name="PDC PASOLV Master" type="462c0819:PsiDirectoryNode" />
+              <item name="gscripts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="PDC PASOLV Master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="PDC PASOLV Master" type="462c0819:PsiDirectoryNode" />
               <item name="recursos" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -259,12 +282,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/recursos" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../New Law of Physic/Game/TheGame.py" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Python" />
   </component>
   <component name="RecentsManager">
@@ -285,7 +307,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.setup">
+  <component name="RunManager" selected="Python.PDC_PASOLV_App">
     <configuration name="Dependencies" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PDC PASOLV Master" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -320,6 +342,27 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/PDC_PASOLV_App.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TheGame" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PDC PASOLV Master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../New Law of Physic/Game" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../New Law of Physic/Game/TheGame.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -372,6 +415,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.TheGame" />
         <item itemvalue="Python.setup" />
         <item itemvalue="Python.glib" />
         <item itemvalue="Python.Dependencies" />
@@ -407,15 +451,22 @@
       <option name="project" value="LOCAL" />
       <updated>1569741752275</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Correção de Bugs">
+      <created>1569795774121</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1569795774121</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1376" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6122449" visible="true" weight="0.20702541" />
-      <window_info id="Structure" order="1" sideWeight="0.3877551" side_tool="true" visible="true" weight="0.20702541" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.59931505" visible="true" weight="0.20684524" />
+      <window_info id="Structure" order="1" sideWeight="0.40068492" side_tool="true" visible="true" weight="0.20684524" />
       <window_info id="Favorites" order="2" sideWeight="0.502551" side_tool="true" weight="0.15969582" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
@@ -425,7 +476,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32876712" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32876712" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32876712" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007474" side_tool="true" weight="0.32876712" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32876712" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -437,28 +488,10 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Mudanças na Leitura de Funcoes do modulo gmath_funcao&#10;e nas no modulo Classes" />
     <MESSAGE value="Capacidade de armazenar variaveis e funções corrigido alguns erros" />
-    <option name="LAST_COMMIT_MESSAGE" value="Capacidade de armazenar variaveis e funções corrigido alguns erros" />
+    <MESSAGE value="Correção de Bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correção de Bugs" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ITMG/mainInterface/ITMG.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#16#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controle/DirController.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controle/Constantes.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extensoes/IntermedLib.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/Data.py" />
     <entry file="file://$PROJECT_DIR$/InterfaceManager.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -584,24 +617,76 @@
       <provider selected="true" editor-type-id="images" />
     </entry>
     <entry file="file://$PROJECT_DIR$/variavelinputclass.py" />
-    <entry file="file://$PROJECT_DIR$/extensoes/Dependencies.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2376">
-          <caret line="99" selection-start-line="99" selection-end-line="99" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/recursos/icon.png">
+      <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/formulainputclass.py">
+    <entry file="file://$PROJECT_DIR$/setup/setup.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        <state relative-caret-position="120">
+          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/pyface/ui/qt4/code_editor/code_widget.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12384">
+        <state relative-caret-position="-2141">
           <caret line="527" column="13" selection-start-line="527" selection-start-column="13" selection-end-line="527" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gscripts/Gmath/gmath.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1776">
+          <caret line="75" column="91" selection-start-line="75" selection-start-column="12" selection-end-line="75" selection-end-column="91" />
+          <folding>
+            <element signature="e#10#46#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../New Law of Physic/Game/TheGame.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-245">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gscripts/Geometric/Geometric.py" />
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37/Lib/site-packages/OpenGL/raw/GLU/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6408">
+          <caret line="272" selection-start-line="272" selection-end-line="272" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/PDC_PASOLV_App.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="141" column="18" lean-forward="true" selection-start-line="141" selection-start-column="18" selection-end-line="141" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#36#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extensoes/Dependencies.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2928">
+          <caret line="122" column="21" selection-start-line="122" selection-start-column="21" selection-end-line="122" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/GetEnvPath.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="7" column="47" selection-start-line="7" selection-start-column="47" selection-end-line="7" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gscripts/Classes/Classes.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1608">
+          <caret line="67" column="41" selection-start-line="67" selection-start-column="41" selection-end-line="67" selection-end-column="41" />
         </state>
       </provider>
     </entry>
@@ -615,64 +700,37 @@
     <entry file="file://$PROJECT_DIR$/gscripts/Gmath/gmath_extensao.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/gscripts/Gmath/gmath.py">
+    <entry file="file://$PROJECT_DIR$/formulainputclass.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="75" column="91" lean-forward="true" selection-start-line="75" selection-start-column="12" selection-end-line="75" selection-end-column="91" />
+        <state relative-caret-position="168">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gscripts/Gmath/gmath_funcao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-264">
+          <caret line="1" column="38" selection-start-line="1" selection-start-column="38" selection-end-line="1" selection-end-column="38" />
           <folding>
-            <element signature="e#10#46#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/recursos/icon.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/GetEnvPath.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="57" selection-start-line="2" selection-start-column="57" selection-end-line="2" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gscripts/Classes/Classes.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="65" column="62" selection-start-line="65" selection-start-column="62" selection-end-line="65" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/PDC_PASOLV_App.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="132" column="29" lean-forward="true" selection-start-line="132" selection-start-column="29" selection-end-line="132" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
+            <element signature="e#0#43#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/interfaces/Interface.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="305" column="65" selection-start-line="305" selection-start-column="65" selection-end-line="305" selection-end-column="65" />
+        <state relative-caret-position="475">
+          <caret line="157" column="13" selection-start-line="157" selection-start-column="13" selection-end-line="157" selection-end-column="13" />
           <folding>
             <element signature="e#52#88#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/setup/setup.py">
+    <entry file="file://$PROJECT_DIR$/geometricglclass.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" column="32" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gscripts/Gmath/gmath_funcao.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="159" column="49" lean-forward="true" selection-start-line="159" selection-start-column="49" selection-end-line="159" selection-end-column="49" />
+        <state relative-caret-position="331">
+          <caret line="41" column="14" selection-start-line="41" selection-start-column="14" selection-end-line="41" selection-end-column="14" />
         </state>
       </provider>
     </entry>
